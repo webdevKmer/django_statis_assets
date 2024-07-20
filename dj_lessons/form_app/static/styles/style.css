@@ -1,0 +1,66 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+h1{
+    color: lightgreen;
+    font-weight: bold;
+}
+h3{
+    color: green;
+}
+p{
+    font-style: italic;
+    color: grey;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+img{
+    border-radius: 1rem;
+}
+button{
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    color: whitesmoke;
+}
+label{
+    font-weight: bold;
+    text-align: left !important;
+}
+form{
+    max-width: 400px;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    margin: 0 auto;
+}
+input[type='text'],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+.btntoform form{
+    border: none;
+}

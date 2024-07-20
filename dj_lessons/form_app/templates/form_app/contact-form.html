@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Forms - Contact Us</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'index' %}">Index</a>
+        <a href="{% url 'forms' %}">Forms</a>
+    </nav>
+    <img src="{% static 'images/dlogo_2.png'%}" alt="django logo 2">
+    <h1>Contact Us</h1>
+    <p>Enter in contact with us or leave your feedback, please!!</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>

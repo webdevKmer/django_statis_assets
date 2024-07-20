@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Message</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}">
+</head>
+<body>
+    <img src="{% static 'images/dlogo_2.png'%}" alt="django logo 2">
+    <h3>Your message was sent successfully. Thanks you for your contact.</h3>
+    <p>Go back <a href="{% url 'forms' %}">Home</a></p>
+</body>
+</html>

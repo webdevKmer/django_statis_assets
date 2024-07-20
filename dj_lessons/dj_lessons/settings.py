@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-webdevkmer-djangostatis-4v409h70c3y.ws-eu115.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-webdevkmer-djangostatis-4v409h70c3y.ws-eu115.gitpod.io']
+
 
 # Application definition
 
@@ -38,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'static_assets',
-
+    'form_app',
 ]
 
 MIDDLEWARE = [

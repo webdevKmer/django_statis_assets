@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('assets/', include('static_assets.urls')),
+    path('forms/', include('form_app.urls')),
+
 ]
